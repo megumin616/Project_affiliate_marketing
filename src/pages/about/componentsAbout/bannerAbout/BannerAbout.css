@@ -1,0 +1,25 @@
+.page-about {
+    background-image: url(../../../../assets/images/products-page-heading.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page-about .inner-content {
+    padding: 150px 0px;
+    text-align: center;
+}
+
+.page-about .inner-content h2 {
+    font-size: 52px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.page-about .inner-content span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    font-style: italic;
+}
