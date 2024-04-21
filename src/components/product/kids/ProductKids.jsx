@@ -1,45 +1,14 @@
 import React, { useState } from 'react'
 
 // images
-import kid1 from "../../../assets/images/kid-01.jpg";
-import kid2 from "../../../assets/images/kid-02.jpg";
-import kid3 from "../../../assets/images/kid-03.jpg";
 import lazada from "../../../assets/images/LaSh/icons8-lazada.png";
 import shopee from "../../../assets/images/LaSh/icons8-shopee.png";
+import { popularDataKids } from '../../../database/pupolar/pupolarData';
 
 export default function ProductKids() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const menBox1Data = [
-      {
-        id: 1,
-        name: "Product 1",
-        image: kid1,
-        price: "$20.00",
-        // ข้อมูลอื่น ๆ ที่เกี่ยวข้องกับ Product 1
-      },
-      {
-        id: 2,
-        name: "Product 2",
-        image: kid2,
-        price: "$25.00",
-        // ข้อมูลอื่น ๆ ที่เกี่ยวข้องกับ Product 2
-      },
-      {
-        id: 3,
-        name: "Product 3",
-        image: kid3,
-        price: "$30.00",
-        // ข้อมูลอื่น ๆ ที่เกี่ยวข้องกับ Product 3
-      },
-      {
-        id: 3,
-        name: "Product 3",
-        image: kid3,
-        price: "$30.00",
-        // ข้อมูลอื่น ๆ ที่เกี่ยวข้องกับ Product 3
-      },
-      // เพิ่มข้อมูลสินค้าเพิ่มเติมตามต้องการ
-    ];
+    const menBox1Data = popularDataKids;
+
   
     const handleMoveLeft = () => {
       if (currentIndex > 0) {
@@ -87,8 +56,8 @@ export default function ProductKids() {
             .slice(currentIndex, currentIndex + 3)
             .map((item, index) => (
               <div key={index} className="men-box1">
-                <div class="thumb">
-                  <div class="hover-content">
+                <div className="thumb">
+                  <div className="hover-content">
                     <ul>
                       <li>
                         <a href="single-product.html">

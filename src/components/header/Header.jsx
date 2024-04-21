@@ -33,34 +33,34 @@ export default function Header() {
     }
 
   return (
-      <header class="header-area header-sticky">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <nav class="main-nav">
-                <a class="logo">
+      <header className="header-area header-sticky">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <nav className="main-nav">
+                <a className="logo">
                   <Link to="/">
                     <img src={logo} />
                   </Link>
                 </a>
-                <ul class="nav">
-                  <li class="scroll-to-section">
-                    <a href="#top" class="active">
+                <ul className="nav">
+                  <li className="scroll-to-section">
+                    <a href="#top" className="active">
                       <Link to="/">Home</Link>
                     </a>
                   </li>
-                  <li class="scroll-to-section">
+                  <li className="scroll-to-section">
                     <a href="#men">Men's</a>
                   </li>
-                  <li class="scroll-to-section">
+                  <li className="scroll-to-section">
                     <a href="#women">Women's</a>
                   </li>
-                  <li class="scroll-to-section">
+                  <li className="scroll-to-section">
                     <a href="#kids">Kid's</a>
                   </li>
-                  <li class="submenu">
+                  <li className="submenu">
                     <a href="#" onClick={listpage}>Pages</a>
-                    <ul className="ul-pages">
+                    <ul classNameName="ul-pages">
                       <li>
                         <Link to="/about">About Us</Link>
                       </li>
@@ -73,7 +73,7 @@ export default function Header() {
                       </li>
                     </ul>
                   </li>
-                  <li class="submenu">
+                  <li className="submenu">
                     <a href="#">Features</a>
                     <ul>
                       <li>
@@ -96,11 +96,11 @@ export default function Header() {
                       </li>
                     </ul>
                   </li>
-                  <li class="scroll-to-section">
+                  <li className="scroll-to-section">
                     <a href="#explore">Explore</a>
                   </li>
                 </ul>
-                <a class="menu-trigger" onClick={hamber}>
+                <a className="menu-trigger" onClick={hamber}>
                   <span>Menu</span>
                 </a>
               </nav>

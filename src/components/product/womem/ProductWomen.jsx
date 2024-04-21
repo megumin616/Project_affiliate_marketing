@@ -1,45 +1,14 @@
 import React, { useState } from 'react'
 
 // images 
-import woman1 from "../../../assets/images/women-01.jpg";
-import woman2 from "../../../assets/images/women-02.jpg";
-import woman3 from "../../../assets/images/women-03.jpg";
 import lazada from "../../../assets/images/LaSh/icons8-lazada.png";
 import shopee from "../../../assets/images/LaSh/icons8-shopee.png";
+import { popularDataWomen } from '../../../database/pupolar/pupolarData';
 
 export default function ProductWomen() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const menBox1Data = [
-      {
-        id: 1,
-        name: "Product 1",
-        image: woman1,
-        price: "$20.00",
-        // ข้อมูลอื่น ๆ ที่เกี่ยวข้องกับ Product 1
-      },
-      {
-        id: 2,
-        name: "Product 2",
-        image: woman2,
-        price: "$25.00",
-        // ข้อมูลอื่น ๆ ที่เกี่ยวข้องกับ Product 2
-      },
-      {
-        id: 3,
-        name: "Product 3",
-        image: woman3,
-        price: "$30.00",
-        // ข้อมูลอื่น ๆ ที่เกี่ยวข้องกับ Product 3
-      },
-      {
-        id: 3,
-        name: "Product 3",
-        image: woman3,
-        price: "$30.00",
-        // ข้อมูลอื่น ๆ ที่เกี่ยวข้องกับ Product 3
-      },
-      // เพิ่มข้อมูลสินค้าเพิ่มเติมตามต้องการ
-    ];
+    const menBox1Data = popularDataWomen;
+
   
     const handleMoveLeft = () => {
       if (currentIndex > 0) {
@@ -87,24 +56,17 @@ export default function ProductWomen() {
             .slice(currentIndex, currentIndex + 3)
             .map((item, index) => (
               <div key={index} className="men-box1">
-                <div class="thumb">
-                  <div class="hover-content">
+                <div className="thumb">
+                  <div className="hover-content">
                     <ul>
                       <li>
                         <a href="single-product.html">
-                          {/* <i class="fa fa-eye"></i> */}
                           <img src={lazada} />
                           <p>Lazada</p>
                         </a>
                       </li>
-                      {/* <li>
-                    <a href="single-product.html">
-                      <i class="fa fa-star"></i>
-                    </a>
-                  </li> */}
                       <li>
                         <a href="single-product.html">
-                          {/* <i class="fa fa-shopping-cart"></i> */}
                           <img src={shopee} />
                           <p>Shopee</p>
                         </a>
@@ -116,7 +78,6 @@ export default function ProductWomen() {
                 <div>
                   <div className="star-men">
                     <h3>{item.name}</h3>
-                    {/* <i class="fa-regular fa-star"></i> */}
                   </div>
                 </div>
                 <p>{item.price}</p>
@@ -132,7 +93,6 @@ export default function ProductWomen() {
           </button>
         </div>
       </div>
-      {/* <hr style={{ borderBottom: '1px dotted black', borderTop: 'none', berder: 'none' }} /> */}
     </section>
   )
 }

@@ -5,7 +5,9 @@ import man1 from "../../../assets/images/men-01.jpg";
 import lazada from "../../../assets/images/LaSh/icons8-lazada.png";
 import shopee from "../../../assets/images/LaSh/icons8-shopee.png";
 
-export default function ProductAll() {
+// ทำให้ข้อมูลเปลี่ยน list ดูสินค้าได้ 
+
+export default function ProductAll() { 
   return (
     <>
       <section className="section" id="products">
