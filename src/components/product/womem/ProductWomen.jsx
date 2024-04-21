@@ -67,7 +67,7 @@ export default function ProductWomen() {
       }
     };
   return (
-    <section className="section" id="men">
+    <section className="section" id="women">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
