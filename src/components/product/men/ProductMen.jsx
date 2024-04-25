@@ -66,12 +66,12 @@ export default function ProductMen() {
                           <p>Lazada</p>
                         </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a href="single-product.html">
                           <img src={shopee} />
                           <p>Shopee</p>
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                   <img src={item.image} />

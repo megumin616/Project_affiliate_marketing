@@ -11,6 +11,7 @@ import kid1 from "../../assets/images/kid-01.jpg";
 import kid2 from "../../assets/images/kid-02.jpg";
 import kid3 from "../../assets/images/kid-03.jpg";
 
+
 export const popularDataMen = [
     {
       id: 1,
@@ -30,12 +31,7 @@ export const popularDataMen = [
       image: man3,
       price: "$30.00",
     },
-    // {
-    //   id: 3,
-    //   name: "Product 3",
-    //   image: man1,
-    //   price: "$30.00",
-    // },
+
   ];
 
 export const popularDataWomen = [
